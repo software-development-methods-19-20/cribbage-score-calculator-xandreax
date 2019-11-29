@@ -2,11 +2,19 @@ package cribbage;
 
 public class Card {
 
-    public String rank() {
-        return "5";
+    private Rank rank;
+    private Suite suite;
+
+    public Card (Rank rank, Suite suite){
+        this.rank = rank;
+        this.suite = suite;
+    }
+
+    public Rank rank() {
+        return rank;
     }
 
     public Suite suite() {
-        return Suite.HEART;
+        return suite;
     }
 }
